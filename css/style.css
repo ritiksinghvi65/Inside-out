@@ -1,3 +1,4 @@
+                                  /* nav-bar */
 .logo{
   margin: 0 10px;
   height:50px;
@@ -10,28 +11,54 @@
 }
 .material-icons{
   padding: 10px;
-
 }
+
+                                     /* bg-img */
 .top-img{
 width:100%;
-height: 450px;
+height: 550px;
 padding: 0 70px;
 background-position: center;
 background-repeat: no-repeat;
 background-size: contain;
 }
-/* .top-content{
-  color: #fff;
-margin: 80px 40px ;
-text-align: center;
+
+                                      /* Form */
+.detail-form{
 position: absolute;
 transform: translate(-50%, -50%);
-top:30%;
-left:40%;
-font-family: 'Playfair Display', serif;
-background-color: rgb(0,0,0,0.5);
-} */
+width: 300px;
+height: 400px;
+background-color: #fff;
+right: 0;
+top:50%;
+border-radius: 8px;
+}
 
+h4{
+  text-align: center;
+  padding: 10px;
+}
+
+.detail{
+  padding: 10px 30px 10px 20px;
+}
+.option{
+  text-align: right;
+  font-size: 1rem;
+}
+.box{
+  box-sizing: content-box;
+  border-radius: 4px;
+  padding: 6px 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.btn{
+  margin-left:40px;
+}
+
+                                    /* about */
 .aboutus{
   text-align: center;
   font-size: 3rem;

@@ -40,7 +40,7 @@
 
     </ul>
     <div class="contact">
-      <span class="material-icons">call</span><a href="8904962120"><span >8904962120</span></a><br>
+      <span class="material-icons">call</span><a href="tel:8904962120"><span >8904962120</span></a><br>
   <span class="material-icons">email</span><a href="mail.theinsidestory@gmail.com"><span>mail.theinsidestory@gmail.com</span></a>
     </div>
   </div>
@@ -48,11 +48,34 @@
 <!-- HOME -->
 <div id="home" class="home">
   <img class="top-img" src="img/ee2.jpg" alt="">
-  <!-- <div class="top-content">
-    <h2 style="padding:-10px" class="opacity">Let's make your house the heaven <br> <br> where everyone wants to live in</h2>
-  </div> -->
 
+  <!-- Form -->
+  <form action="action.php" method="post" class=" detail-form ">
+    <h4>Free Design Consultation</h4>
+
+<div class="detail name">
+  <label class="option" for="name"><b>Name:</b></label><br>
+  <input class="box" type="text" name="name" placeholder="Enter Name" required autocomplete="off">
 </div>
+
+<div class="detail phone">
+  <label class="option" for="phone"><b>Phone:</b></label><br>
+<input class="box" type="tel" name="phone" placeholder="Enter number" required autocomplete="off">
+</div>
+
+<div class="detail email">
+  <label class="option" for="email"><b>Email:</b></label><br>
+  <input class="box" type="email" placeholder="Enter Email" name="email" required  autocomplete="off">
+</div>
+      <div class="detail submit">
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+    Book Appointment
+  </button>
+
+      </div>
+
+  </form>
+
 
 <!-- ABOUT US -->
 <h2 class="aboutus" >ABOUT US</h2>
