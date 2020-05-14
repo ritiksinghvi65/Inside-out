@@ -14,7 +14,7 @@ $headers = "From:".$email;
 
 if(empty($name) || empty($phone) || empty($email))
 {
-  echo "Please fill all the details"
+  echo "Please fill all the details";
 }
 else {
  mail($to, $subject, $message, $headers );
