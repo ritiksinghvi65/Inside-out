@@ -19,7 +19,7 @@ if(empty($name) || empty($phone) || empty($email))
 else {
  mail($to, $subject, $message, $headers );
  echo "<script type='text/javascript'>alert(Your Appointment Booked Successfully!);
-window.hisory.log(-1);
+window.history.log(-1);
  </script>";
 }
 }
