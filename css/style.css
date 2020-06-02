@@ -1,4 +1,7 @@
                                   /* nav-bar */
+.navbar{
+background-color: #c3edea;
+}                                 
 .logo{
   margin: 0 10px;
   height:50px;
@@ -30,7 +33,7 @@ transform: translate(-50%, -50%);
 width: 300px;
 height: 400px;
 background-color: #fff;
-right: 0;
+right: 10px;
 top:60%;
 border-radius: 8px;
 }
@@ -40,7 +43,7 @@ h4{
   padding: 10px;
 }
 
-.detail{
+/* .detail{
   padding: 10px 30px 10px 20px;
 }
 .option{
@@ -53,27 +56,46 @@ h4{
   padding: 6px 12px;
   width: 100%;
   border: 1px solid #ccc;
-}
-.btn{
+} */
+/* .btn{
   margin-left:40px;
-}
+  background-color: #ed1c24;
+    color: #fff;
+}  */
+#newfrom{
+  background-color: #a6b1e1;
+    color: #fff;
+    padding: 20px 20px;
+    width: 200px;
+    box-shadow: none;
+    border-radius: 2px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    border: none;
+    position: fixed;
+    z-index: 999;
+    font-size: 24px; 
+} 
 
                                     /* about */
 .aboutus{
   text-align: center;
   font-size: 3rem;
-  font-family: 'Amatic SC', cursive;
+  
   padding-top: 50px;
 }
 .content{
   padding: 10px 100px;
   margin: 50px 20px;
   text-align: center;
-  font-family: 'Amatic SC', cursive;
-  font-size: 2rem;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.5rem;
 }
+
+                /* our services */
 .heading{
-  background-color: #98d6ea;
+  background-color: #c3edea;
   color: #142850;
   text-align: center;
   font-size: 2rem;
@@ -81,8 +103,9 @@ h4{
   padding: 20px;
 }
 .colored{
-  background-color: #a8d3da;
-  padding: 10px;
+  background-color: #c3edea;
+  padding: 20px 10px;
+  
 }
 
 h3{
@@ -119,6 +142,7 @@ p{
   color: black;
 }
 
+                  /* gallery */
 .group-one{
   height: 400px;
 }
@@ -151,7 +175,10 @@ p{
 .footer-img{
   padding-top: 40px;
   height: 200px;
-  width: 200px;
+  width: 300px;
+}
+#more-info{
+  padding:30px 20px;
 }
 .info{
   padding: 10px;
