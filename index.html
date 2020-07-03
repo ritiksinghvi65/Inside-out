@@ -1,246 +1,241 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>LINES&SPACES</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
-<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet"/>
+<head>
+  <meta charset="utf-8">
+  <title>LINES&SPACES</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <img class="logo" src="img/logo.jpg" alt="">
+    <a style="font-size: 2rem" class="navbar-brand" href="#">LINES & SPACES</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-services">OUR SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#design-process">DESIGN PROCESS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#more-info">MORE INFO</a>
+        </li>
+
+      </ul>
+      <div class="contact">
+        <span class="material-icons">call</span><a href="tel:8904962120"><span>8904962120</span></a><br>
+        <span class="material-icons">email</span><a
+          href="mailto:mail.linesandspaces@gmail.com"><span>mail.linesandspaces@gmail.com</span></a>
+      </div>
+    </div>
+  </nav>
+  <!-- HOME -->
+  <div id="home" class="home">
+    <img class="top-img" src="img/ee2.jpg" alt="">
+
     
-</head> 
+    <!-- Form -->
+    <form action="datas.php" method="POST">
+      <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Free Design Consultation</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
 
+              <div class="md-form mb-4">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input type="text" id="defaultForm-pass" name="name" class="form-control validate"
+                  placeholder="Your name" required autocomplete="off">
 
-  <body>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <img class="logo" src="img/logo.jpg" alt="">
-  <a style="font-size: 2rem"class="navbar-brand" href="#">LINES & SPACES</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+              </div>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#our-services">OUR SERVICES</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#gallery">GALLERY</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#design-process">DESIGN PROCESS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#more-info">MORE INFO</a>
-      </li>
+              <div class="md-form mb-4">
+                <i class="fas fa-mobile prefix grey-text"></i>
+                <input type="tel" id="defaultForm-pass" name="phone" class="form-control validate"
+                  placeholder="Your contact number" required autocomplete="off">
 
-    </ul>
-    <div class="contact">
-      <span class="material-icons">call</span><a href="tel:8904962120"><span >8904962120</span></a><br>
-  <span class="material-icons">email</span><a href="mailto:mail.linesandspaces@gmail.com"><span>mail.linesandspaces@gmail.com</span></a>
-    </div>
-  </div>
-</nav>
-<!-- HOME -->
-<div id="home" class="home">
-  <img class="top-img" src="img/ee2.jpg" alt="">
+              </div>
 
-  <!-- Form -->
-  <!-- <form action="data.php" method="POST" class=" detail-form ">
-    
-    <h4>Free Design Consultation</h4>
+              <div class="md-form mb-4">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="email" id="defaultForm-pass" name="email" class="form-control validate"
+                  placeholder="Your email" required autocomplete="off">
 
-<div class="detail name">
-  <label class="option" for="name"><b>Name:</b></label><br>
-  <input class="box" type="text" name="name" placeholder="Enter Name" required autocomplete="off">
-</div>
+              </div>
 
-<div class="detail phone">
-  <label class="option" for="phone"><b>Phone:</b></label><br>
-<input class="box" type="tel" name="phone" placeholder="Enter number" required autocomplete="off">
-</div>
-
-<div class="detail email">
-  <label class="option" for="email"><b>Email:</b></label><br>
-  <input class="box" type="email" placeholder="Enter Email" name="email" required  autocomplete="off">
-</div>
-      <div class="detail submit">
-        <button type="submit" name="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-    Book Appointment
-  </button>
-
-      </div>
-
-  </form> -->
-                          <!-- Form -->
- <form action="datas.php" method="POST" >
-  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Free Design Consultation</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-
-        <div class="md-form mb-4">
-          <i class="fas fa-user prefix grey-text"></i>
-          <input type="text" id="defaultForm-pass" name="name" class="form-control validate" placeholder="Your name" required autocomplete="off">
-          
-        </div>
-
-        <div class="md-form mb-4">
-          <i class="fas fa-mobile prefix grey-text"></i>
-          <input type="tel" id="defaultForm-pass" name="phone" class="form-control validate" placeholder="Your contact number" required autocomplete="off">
-          
-        </div>
-
-        <div class="md-form mb-4">
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <input type="email" id="defaultForm-pass" name="email" class="form-control validate" placeholder="Your email" required autocomplete="off">
-          
-        </div>
-
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button type="submit" class="newform btn btn-default"> Book Appointment</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="text-center">
-  <button href="" id= "newfrom" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">GET FREE CONSULTATION</button>
-</div>
-</form>
-
-
-
-<!-- ABOUT US -->
-<h2 class="aboutus" >ABOUT US</h2>
-  <div class="content" id="aboutus">
-    <h2>
-At LINES & SPACES we beleive that we can help you build a space that matches your expectations.
-<br>LINES & SPACES,bring architects, designers as well as vastu experts as a collective to provide a hassle free service to the client.
-It offers great peace of mind for a client to know the full turnkey solution is designed, fabricated, and managed end to end by a single team of professionals. Not only does it avoid unnecessary delays to a project, but it also ensures the project is executed to the highest of standards.ONE THAT'S A REFLECTION OF YOUR UNIQUE PERSONALITY, INTERESTS, AND DAY-TO-DAY NEEDS.</h2>
-  </div>
-
-<!-- OUR SERVICES -->
-<section >
-  <div id="our-services" class="heading">
-    <h2>OUR SERVICES</h2>
-  </div>
-  <div class="colored conatiner-fluid">
-    <div class="row">
-      <div class="service col-lg-4">
-<i class="fas fa-circle fa-drafting-compass"></i>
-<h3>INTERIOR DESIGN</h3>
-<p class="service">Interior design services offer a vast variety of solutions for our clients’ homes and offices.</p>
-      </div>
-      <div class="service col-lg-4">
-<i class="fas fa-circle fa-home"></i>
-<h3>DECORATIVE SERVICES</h3>
-<p class="service" >Our professional decorators will be happy to help you change your house’s inner look.</p>
- </div>
-<div class="service col-lg-4">
-  <i class="fas fa-circle fa-lightbulb"></i>
-<h3>SPACE PLANNING</h3>
-<p class="service">We create better interior experiences through our space planning services.</p>
-</div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<div id="gallery">
-<h2 class="aboutus" >GALLERY</h2>
-<div class="row">
-  <div class="column">
-    <img class="group-one"src="img/ee1.jpg">
-    <img class="group-two" src="img/wroom3.jpg">
-    <img class="group-one" src="img/tv3.jpg">
-  </div>
-  <div class="column">
-    <img class="group-two" src="img/broom1.jpg">
-    <img class="group-one" src="img/ee2.jpg">
-    <img class="group-one"src="img/k1.jpg">
-
-  </div>
-  <div class="column">
-    <img class="group-one" src="img/tv2.jpg">
-    <img class="group-one" src="img/broom3.jpg">
-    <img class="group-two" src="img/lroom1.jpg">
-
-  </div>
-</div>
-</div>
-
-<!-- DESIGN PROCESS -->
-<div id="design-process" class="design-process">
-  <div class="process-head">
-    <h2>DESIGN PROCESS</h2>
-  </div>
-  <div class="row">
-    <div class="service col-lg-4">
-<i class="fas fa-circle fa-dollar-sign"></i>
-<h3>Get Quote</h3>
-<p class="service">Get a personalised quote for your interior based on the actual dimensions of your home.</p>
-    </div>
-    <div class="service col-lg-4">
-<i class="fas fa-circle fa-swatchbook"></i>
-<h3>Finalise Design</h3>
-<p class="service">Our talented pool of designers will work with you to give shape to your dream home.</p>
-</div>
-<div class="service col-lg-4">
-<i class="fas fa-circle fa-clock"></i>
-<h3>Deliver</h3>
-<p class="service">Complete the interior delivery & installation in 4 weeks.</p>
-</div>
-  </div>
-</div>
-
-<!-- MORE INFO -->
-<footer>
-  <div id="more-info" class="colored conatiner-fluid">
-    <div class="row">
-      <div class="infos col-lg-4">
-        <img class="footer-img" src="img/logo_name.jpg" alt="">
-      </div>
-      <div class="infos col-lg-4">
-        <h3>ABHISHEK JAIN</h3>
-
-        <i class="fab info fa-3x fa-whatsapp"></i><a href="tel:8904962120"><span>8904962120</span></a><br>
-          <i class="fas info fa-3x fa-mobile"></i><a href="tel:8660820070">  <span>8660820070</span>  </a><br>
-        <i class="fas info fa-3x fa-envelope"></i><a href="mailto:mail.linesandspaces@gmail.com"><span>mail.linesandspaces@gmail.com</span></a>
-      </div>
-      <div class="col-lg-4">
-
-        <div class="infos address">
-
-        <h4><u>ADDRESS</u></h4>
-        <p class="add">34 PREKSHA KUNJ <br>
-          1st CROSS AZADNAGAR <br>
-           MYSORE ROAD <br>
-            BENGALURU 560-018</p>
-
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="submit" class="newform btn btn-default"> Book Appointment</button>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button href="" id="newfrom" class="btn btn-default btn-rounded mb-4" data-toggle="modal"
+          data-target="#modalLoginForm">GET FREE CONSULTATION</button>
+      </div>
+    </form>
+
+
+
+    <!-- ABOUT US -->
+    <h2 class="aboutus">ABOUT US</h2>
+    <div class="content" id="aboutus">
+      
+        At LINES & SPACES we beleive that we can help you build a space that matches your expectations.
+        <br>LINES & SPACES, bring architects, designers as well as vastu experts as a collective to provide a hassle free
+        service to the client.
+        It offers great peace of mind for a client to know the full turnkey solution is designed, fabricated, and
+        managed end to end by a single team of professionals. Not only does it avoid unnecessary delays to a project,
+        but it also ensures the project is executed to the highest of standards.
+        ONE THAT'S A REFLECTION OF YOUR UNIQUE PERSONALITY, INTERESTS, AND DAY-TO-DAY NEEDS.
+    </div>
+
+    <!-- OUR SERVICES -->
+    <section>
+      <div id="our-services" class="heading">
+        <h2 class="aboutus">OUR SERVICES</h2>
+      </div>
+      <div class="colored conatiner-fluid">
+        <div class="row">
+          <div class="service col-lg-4">
+            <i class="fas fa-circle fa-drafting-compass"></i>
+            <h3>INTERIOR DESIGN</h3>
+            <p class="service">Interior design services offer a vast variety of solutions for our clients’ homes and
+              offices.</p>
+          </div>
+          <div class="service col-lg-4">
+            <i class="fas fa-circle fa-home"></i>
+            <h3>DECORATIVE SERVICES</h3>
+            <p class="service">Our professional decorators will be happy to help you change your house’s inner look.</p>
+          </div>
+          <div class="service col-lg-4">
+            <i class="fas fa-circle fa-lightbulb"></i>
+            <h3>SPACE PLANNING</h3>
+            <p class="service">We create better interior experiences through our space planning services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <div id="gallery">
+      <h2 class="aboutus">GALLERY</h2>
+      <div class="row">
+        <div class="column">
+          <img class="group-one" src="img/ee1.jpg">
+          <img class="group-two" src="img/wroom3.jpg">
+          <img class="group-one" src="img/tv3.jpg">
+        </div>
+        <div class="column">
+          <img class="group-two" src="img/broom1.jpg">
+          <img class="group-one" src="img/ee2.jpg">
+          <img class="group-one" src="img/k1.jpg">
+
+        </div>
+        <div class="column">
+          <img class="group-one" src="img/tv2.jpg">
+          <img class="group-one" src="img/broom3.jpg">
+          <img class="group-two" src="img/lroom1.jpg">
+
+        </div>
       </div>
     </div>
 
-  </div>
-</footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <!-- DESIGN PROCESS -->
+    <div id="design-process" class="design-process">
+      <div class="process-head">
+        <h2 class="aboutus">DESIGN PROCESS</h2>
+      </div>
+      <div class="row">
+        <div class="service col-lg-4">
+          <i class="fas fa-circle fa-dollar-sign"></i>
+          <h3>Get Quote</h3>
+          <p class="service">Get a personalised quote for your interior based on the actual dimensions of your home.</p>
+        </div>
+        <div class="service col-lg-4">
+          <i class="fas fa-circle fa-swatchbook"></i>
+          <h3>Finalise Design</h3>
+          <p class="service">Our talented pool of designers will work with you to give shape to your dream home.</p>
+        </div>
+        <div class="service col-lg-4">
+          <i class="fas fa-circle fa-clock"></i>
+          <h3>Deliver</h3>
+          <p class="service">Complete the interior delivery & installation in 4 weeks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MORE INFO -->
+    <footer>
+      <div id="more-info" class="colored conatiner-fluid">
+        <div class="row">
+          <div class="infos col-lg-4">
+            <img class="footer-img" src="img/logo_name.jpg" alt="">
+          </div>
+          <div class="infos col-lg-4">
+            <h3>ABHISHEK JAIN</h3>
+
+            <i class="fab info fa-3x fa-whatsapp"></i><a href="tel:8904962120"><span>8904962120</span></a><br>
+            <i class="fas info fa-3x fa-mobile"></i><a href="tel:8660820070"> <span>8660820070</span> </a><br>
+            <i class="fas info fa-3x fa-envelope"></i><a
+              href="mailto:mail.linesandspaces@gmail.com"><span>mail.linesandspaces@gmail.com</span></a>
+          </div>
+          <div class="col-lg-4">
+
+            <div class="infos address">
+
+              <h4><u>ADDRESS</u></h4>
+              <p class="add">34 PREKSHA KUNJ <br>
+                1st CROSS AZADNAGAR <br>
+                MYSORE ROAD <br>
+                BENGALURU 560-018</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
